@@ -1,0 +1,161 @@
+html[data-eager-blueprint="true"], html[data-eager-blueprint="true"] body {
+  cursor: crosshair !important;
+  background: #0026a9 !important;
+}
+
+html[data-eager-blueprint="true"] body {
+  background: none !important;
+  display: block !important;
+  -webkit-filter: invert(1) sepia(1) hue-rotate(170deg) contrast(5) opacity(.5) !important;
+}
+
+html[data-eager-blueprint="true"] *, html[data-eager-blueprint="true"] *:before, html[data-eager-blueprint="true"] *:after {
+  cursor: crosshair !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  outline: none !important;
+  text-shadow: none !important;
+  color: rgba(0, 0, 0, .6) !important;
+  border-color: rgba(255, 255, 255, .2) !important;
+  -webkit-tap-highlight-color: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+html[data-eager-blueprint="true"] a:link {
+  background: none !important;
+  text-decoration: none !important;
+}
+
+html[data-eager-blueprint="true"] ::selection, html[data-eager-blueprint="true"] * ::selection {
+  -webkit-filter: invert(1);
+  background: #fff !important;
+  color: #0026a9 !important;
+}
+
+html[data-eager-blueprint="true"] svg, html[data-eager-blueprint="true"] svg * {
+  fill: none !important;
+  stroke: rgba(0, 0, 0, .5) !important;
+  stroke-width: 1px !important;
+}
+
+html[data-eager-blueprint="true"] article,
+html[data-eager-blueprint="true"] section,
+html[data-eager-blueprint="true"] div,
+html[data-eager-blueprint="true"] img,
+html[data-eager-blueprint="true"] svg,
+html[data-eager-blueprint="true"] video,
+html[data-eager-blueprint="true"] button,
+html[data-eager-blueprint="true"] input[type="button"],
+html[data-eager-blueprint="true"] .btn,
+html[data-eager-blueprint="true"] [class*="btn-"] {
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  box-shadow: 0 0 0 .5px rgba(0, 0, 0, .25) !important;
+}
+
+eager-blueprint-toggle {
+  position: fixed !important;
+  font-size: 16px !important;
+  top: 16px !important;
+  left: 16px !important;
+  background: rgba(0, 0, 0, 0) !important;
+  display: block !important;
+  height: 3.5em !important;
+  width: 6.8em !important;
+}
+
+#eager-blueprint-toggle {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  position: absolute !important;
+  left: -999em !important;
+}
+
+#eager-blueprint-toggle + label {
+  display: block !important;
+  cursor: pointer !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 32em !important;
+  bottom: 0 !important;
+  margin: auto !important;
+  z-index: 1 !important;
+  padding: 0.125em !important;
+  width: 6.5em !important;
+  height: 3em !important;
+  background-color: #000 !important;
+  -webkit-border-radius: 3em !important;
+  border-radius: 3em !important;
+  -webkit-transition: background 0.4s !important;
+  -moz-transition: background 0.4s !important;
+  -o-transition: background 0.4s !important;
+  -ms-transition: background 0.4s !important;
+  transition: background 0.4s !important;
+}
+
+@media (max-width: 40em) {
+  #eager-blueprint-toggle + label {
+    margin: 0 !important;
+    right: auto !important;
+    bottom: 0 !important;
+  }
+}
+
+#eager-blueprint-toggle + label:before,
+#eager-blueprint-toggle + label:after {
+  display: block !important;
+  position: absolute !important;
+  content: "" !important;
+}
+
+#eager-blueprint-toggle + label:before {
+  top: 0.125em !important;
+  left: 0.125em !important;
+  bottom: 0.125em !important;
+  right: 0.125em !important;
+  background-color: #fff !important;
+  -webkit-border-radius: 3em !important;
+  border-radius: 3em !important;
+}
+
+#eager-blueprint-toggle + label:after {
+  content: "Off" !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  text-indent: 0.05em !important;
+  font-family: Futura, "Helvetica Neue", sans-serif !important;
+  font-weight: 100 !important;
+  color: #fff !important;
+  line-height: 2.75em !important;
+  top: 0.25em !important;
+  left: 0.25em !important;
+  bottom: 0.25em !important;
+  width: 3.25em !important;
+  background-color: #000 !important;
+  -webkit-border-radius: 3.25em !important;
+  border-radius: 3.25em !important;
+  -webkit-transition: margin 0.4s, background 0.4s !important;
+  -moz-transition: margin 0.4s, background 0.4s !important;
+  -o-transition: margin 0.4s, background 0.4s !important;
+  -ms-transition: margin 0.4s, background 0.4s !important;
+  transition: margin 0.4s, background 0.4s !important;
+}
+
+#eager-blueprint-toggle:checked + label {
+  background-color: #fff !important;
+}
+
+#eager-blueprint-toggle:checked + label:before {
+  background-color: #0026A9 !important;
+}
+
+#eager-blueprint-toggle:checked + label:after {
+  content: "On" !important;
+  margin-left: 3em !important;
+  background-color: #fff !important;
+  color: #0026a9 !important;
+}

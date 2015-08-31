@@ -1,0 +1,14 @@
+{
+  "resources": {
+    "head": [
+      {
+        "type": "style",
+        "src": "head.css"
+      },
+      {
+        "type": "script",
+        "src": "head.js"
+      }
+    ]
+  }
+}
