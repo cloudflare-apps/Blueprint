@@ -10,5 +10,14 @@
         "src": "head.js"
       }
     ]
+  },
+  "options": {
+    "properties": {
+      "showToggle": {
+        "title": "Show toggle switch",
+        "type": "boolean",
+        "default": true
+      }
+    }
   }
 }

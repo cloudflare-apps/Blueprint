@@ -3,18 +3,22 @@
     return;
   }
 
+  var options = INSTALL_OPTIONS;
+
   document.documentElement.setAttribute('data-eager-blueprint', true);
 
   document.addEventListener('DOMContentLoaded', function(){
     var el, toggle;
 
-    el = document.createElement('eager-blueprint-toggle');
-    el.innerHTML = '<input id="eager-blueprint-toggle" type="checkbox" checked="true"><label for="eager-blueprint-toggle"></label>';
-    toggle = el.querySelector('input[type="checkbox"]');
+    if (options.showToggle) {
+      el = document.createElement('eager-blueprint-toggle');
+      el.innerHTML = '<input id="eager-blueprint-toggle" type="checkbox" checked="true"><label for="eager-blueprint-toggle"></label>';
+      toggle = el.querySelector('input[type="checkbox"]');
 
-    toggle.addEventListener('click', function(){
-      document.documentElement.setAttribute('data-eager-blueprint', toggle.checked);
-    });
+      toggle.addEventListener('click', function(){
+        document.documentElement.setAttribute('data-eager-blueprint', toggle.checked);
+      });
+    }
 
     document.documentElement.appendChild(el);
 
